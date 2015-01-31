@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+p, h1, h2, h3, h4, h5, h6, div, ul, ul li, a {
+	margin: 0;
+	padding: 0;
+}
+ul, ul li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
+table {
+	border-collapse: collapse;
+}
+img {
+	outline: none;
+	border: none;
+}
+.bold {
+	font-weight: bold;
+}
+input[type="text"] {
+	outline: none;
+}
+.no-border {
+	border: none;
+}
+input[type=button], input[type=submit], input[type=reset] {
+	border: 0px;
+	cursor: pointer;
+	text-align: center;
+}
+.display-none {
+	display: none;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.no-margin {
+	margin: 0px 0px 0px 0px;
+}
+/*-- Clearfix --*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}

@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nlight</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/master-stylesheet.css" />
+<link rel="stylesheet" href="css/custom.css" />
+</head>
+<body ng-controller="mainCtrl"  ng-app="nlightweb">
+
+
+<div class="main-wrap">
+	<!-- -->
+    <div class="map-wrap">
+
+    	<div class="light_wrap">
+        	<a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light1StyleClass}}" id="light1"></a>
+            <div class="tooltip" id="light_det1">
+            	<div class="tool-icon-wrap"></div>
+            	<table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light1StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--Additional Lights -->
+        <div class="light_wrap">
+          <a href="#light_det2" ng-click = "light1Click" title="icon_alert" class="{{light2StyleClass}}" id="light2"></a>
+            <div class="tooltip" id="light_det2">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light2StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="light_wrap">
+          <a href="#light_det3" ng-click = "light1Click" title="icon_alert" class="{{light3StyleClass}}" id="light3"></a>
+            <div class="tooltip" id="light_det3">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light3StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="light_wrap">
+          <a href="#light_det4" ng-click = "light1Click" title="icon_alert" class="{{light4StyleClass}}" id="light4"></a>
+            <div class="tooltip" id="light_det4">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light4StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="light_wrap">
+          <a href="#light_det5" ng-click = "light1Click" title="icon_alert" class="{{light5StyleClass}}" id="light5"></a>
+            <div class="tooltip" id="light_det5">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light5StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="light_wrap">
+          <a href="#light_det6" ng-click = "light1Click" title="icon_alert" class="{{light6StyleClass}}" id="light6"></a>
+            <div class="tooltip" id="light_det6">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light6StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="light_wrap">
+          <a href="#light_det7" ng-click = "light1Click" title="icon_alert" class="{{light7StyleClass}}" id="light7"></a>
+            <div class="tooltip" id="light_det7">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light7StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="light_wrap">
+          <a href="#light_det8" ng-click = "light1Click" title="icon_alert" class="{{light8StyleClass}}" id="light8"></a>
+            <div class="tooltip" id="light_det8">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light8StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light9StyleClass}}" id="light9"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light9StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light10StyleClass}}" id="light10"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light10StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light11StyleClass}}" id="light11"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light11StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light12StyleClass}}" id="light12"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light12StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light13StyleClass}}" id="light13"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light13StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light14StyleClass}}" id="light4"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light14StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light15StyleClass}}" id="light15"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light15StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light16StyleClass}}" id="light16"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light16StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light17StyleClass}}" id="light17"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light17StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light18StyleClass}}" id="light18"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light18StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light19StyleClass}}" id="light19"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light19StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+<div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light20StyleClass}}" id="light20"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light20StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+  <div class="light_wrap">
+          <a href="#light_det1" ng-click = "light1Click" title="icon_alert" class="{{light21StyleClass}}" id="light21"></a>
+            <div class="tooltip" id="light_det1">
+              <div class="tool-icon-wrap"></div>
+              <table width="100%" border="0" class="tooltip-table">
+                  <tr>
+                    <td class="head">Light No</td>
+                    <td>#1923</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Time Stamp</td>
+                    <td>08/01/2015, 08.15 AM</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Zone</td>
+                    <td>Tech Park</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Latitude</td>
+                    <td>13.081604</td>
+                  </tr>
+                  <tr>
+                    <td class="head">Longitude</td>
+                    <td>80.275183</td>
+                  </tr>
+                  <tr>
+                    <td><a ng-click="lightClickAction('light21StyleClass')">Control Light</a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Additional Lights Ends-->
+        
+        
+    </div>
+	<!-- Menu section -->
+	<div class="menu-wrap">
+        <ul class="menulist">
+        	<li class="logo-sec"><a href="#" class="logo" title="Logo"><img src="images/logo.png" alt="Logo" /></a></li>
+        	<li><a href="#" class="menu db" title="">Dashboard</a></li>
+            <li><a href="#" class="menu zone" title="">Zone</a></li>
+            <li><a href="#" class="menu mlc" title="">MLC</a></li>
+            <li><a href="#" class="menu dps" title="">DPS</a></li>
+            <li><a href="#" class="menu sch" title="">Scheduler</a></li>
+            <li><a href="#" class="menu alarm" title="">Alarm</a></li>
+            <li><a href="#" class="menu dimpro" title="">Dimming Profile</a></li>
+            <li><a href="#" class="menu dev" title="">Device Lifetime</a></li>
+            <li><a href="#" class="menu report" title="">Report</a></li>
+            <li><a href="#" class="menu userpro" title="">User Profile</a></li>
+            <li><a href="#" class="menu user" title="">User</a></li>
+        </ul>
+    </div>
+    <!-- Admin section -->
+    <div class="admin-wrap">
+    	<ul class="adminlist">
+        	<li class="noti"><span>25</span></li>
+            <li class="admin">Admin</li>
+            <li class="user">Joe Smith <span class="arrow"></span></li>
+        </ul>
+    </div>
+    <!-- Information section -->
+    <div class="info-wrap" ng-show="lightInfo">
+    	<span class="close" ng-click="closeButton()">X</span>
+        <div class="info-inner-wrap">
+            <div class="title-wrap">
+            	<h3 class="title">Light Information</h3>
+                <p class="switch red"><span class="circle" ng-click="onoffcontrol()"></span></p>
+            </div>
+            <div class="control-wrap">
+                <div class="row row1">
+                    <p id="rot_0" class="control-icon select"><a ng-click="roundClickTop()" title="" class="bright"></a></p>
+                </div>
+                <div class="row row2">
+                    <div class="col col_1">
+                        <p id="rot_270" class="control-icon"><a ng-click="roundClickLeft()" title="" class="info"></a></p>
+                    </div>
+                    <div class="col col_2">
+                        <div class="turn_arrow"></div>
+                    </div>
+                    <div class="col col_3">
+                        <p id="rot_90" class="control-icon"><a ng-click="roundClickRight()" title="" class="energy"></a></p>
+                    </div>
+                </div>
+                <div class="row row3">
+                    <p id="rot_180" class="control-icon"><a ng-click="roundClickBottom()" title="" class="setting"></a></p>
+                </div>
+            </div>
+           
+            <div class="desc-wrap clearfix">
+                <h3 class="title">Description</h3>
+               <!--  <p class="desc">Philips offers a wide range of both decorative and functional lighting. From outdoor LED lights to multicolored indoor lights, Philips has it all.</p>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="desc-table">
+                  <tr><td class="title_col" width="110px">Name</td><td>Near Startup</td></tr>
+                  <tr><td class="title_col">Device Name</td><td>Sample Device</td></tr>
+                  <tr><td class="title_col" width="110px">Longtitude</td><td>10.8778826252</td></tr>
+                  <tr><td class="title_col">Latitude</td><td>12.9837736223</td></tr>
+                  <tr><td class="title_col" width="110px">Temperature</td><td>100 Degree</td></tr>
+                  <tr><td class="title_col">Zone</td><td>Asia Pacefic</td></tr>
+                  <tr><td class="title_col" width="110px">Status</td><td>Active</td></tr>
+                </table> -->
+
+
+                <p class="desc">{{lightdetails.description}}</p>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="desc-table">
+                  <tr><td class="title_col" width="110px">Name</td><td>{{lightdetails.name}}</td></tr>
+                  <tr><td class="title_col">Device Name</td><td>{{lightdetails.devicename.id}}</td></tr>
+                  <tr><td class="title_col" width="110px">Longtitude</td><td>{{lightdetails.lightlot}}</td></tr>
+                  <tr><td class="title_col">Latitude</td><td>{{lightdetails.lightlat}}</td></tr>
+                  <tr><td class="title_col" width="110px">Temperature</td><td>{{lightdetails.lightTemperature}}</td></tr>
+                  <tr><td class="title_col">Zone</td><td>{{lightdetails.lightVoltage}}</td></tr>
+                  <tr><td class="title_col" width="110px">Status</td><td>Active</td></tr>
+                </table>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <div class="footer-wrap">
+    	<ul class="footlist">
+        	<li class="foot-title">Light Legends</li>
+            <li class="on">On</li>
+            <li class="dim">Dim</li>
+            <li class="off">Off</li>
+            <li class="alert">Alert</li>
+            <li class="fused">Fused</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="js/1.9.1-jquery.min.js"></script>
+<script type="text/javascript" src="js/jQueryRotate.js"></script>
+<script type="text/javascript" src="js/simple-slider.js"></script>
+<script type="text/javascript" src="js/jquery.qtip.js"></script>
+<script type="text/javascript" src="js/theme.js"></script>
+<script type="text/javascript" src="js/angular/angular.js"></script>
+<script type="text/javascript" src="js/angular/angular-route.js"></script>
+
+<script type="text/javascript" src="js/angular/angular-sanitize.js"></script>
+<script type="text/javascript" src="js/angular/angular-google-maps.min.js"></script>
+<script type="text/javascript" src="js/angular/ngFacebook.js"></script>
+<script type="text/javascript" src="js/app/app.js"></script>
+</body>
+</html>
