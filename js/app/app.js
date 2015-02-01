@@ -152,8 +152,8 @@ $scope.loginWithFB = function(){
   $scope.turnoffLight = function(){
     var page = devConfig.url + "/monitor/turnofflight/"+$scope.currentlightId;
      $http.get(page).success(function(response) {
-          $scope.checkLightOn = true;
-          $scope.checkLightOff = false;
+          $scope.checkLightOn = false;
+          $scope.checkLightOff = true;
           $scope.changeLightStyle("icon_light light_off",$scope.currentlightId);
         });
   }
@@ -161,8 +161,8 @@ $scope.loginWithFB = function(){
   $scope.turnOnLight = function(){
     var page = devConfig.url + "/monitor/turnonlight/"+$scope.currentlightId;
      $http.get(page).success(function(response) {
-          $scope.checkLightOn = false;
-          $scope.checkLightOff = true;
+          $scope.checkLightOn = true;
+          $scope.checkLightOff = false;
           $scope.changeLightStyle("icon_light light_on",$scope.currentlightId);
         });
   }
