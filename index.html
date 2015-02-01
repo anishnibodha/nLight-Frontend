@@ -334,6 +334,15 @@
               <h3 class="title">Light Information</h3>
                 <!-- <p class="switch red"><span class="circle"></span></p> -->
                   <!-- <switch name="onoffswitch" ng-model="onoffswitch"></switch> -->
+
+              <span ng-if="checkLightOn">
+                  <button ng-click="turnoffLight()" class="btn btn-danger btn-xs">Turn Off</button>
+              </span>
+
+              <span ng-if="checkLightOff">
+                  <button ng-click="turnOnLight()" class="btn btn-success btn-xs">Turn On</button>
+              </span>
+
             </div>
             <div class="control-wrap">
                 <div class="row row1">
@@ -357,20 +366,22 @@
            
             <div class="desc-wrap clearfix">
                 <h3 class="title">Description</h3>
-               <!--  <p class="desc">Philips offers a wide range of both decorative and functional lighting. From outdoor LED lights to multicolored indoor lights, Philips has it all.</p>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="desc-table">
-                  <tr><td class="title_col" width="110px">Name</td><td>Near Startup</td></tr>
-                  <tr><td class="title_col">Device Name</td><td>Sample Device</td></tr>
-                  <tr><td class="title_col" width="110px">Longtitude</td><td>10.8778826252</td></tr>
-                  <tr><td class="title_col">Latitude</td><td>12.9837736223</td></tr>
-                  <tr><td class="title_col" width="110px">Temperature</td><td>100 Degree</td></tr>
-                  <tr><td class="title_col">Zone</td><td>Asia Pacefic</td></tr>
-                  <tr><td class="title_col" width="110px">Status</td><td>Active</td></tr>
-                </table> -->
-
+             
 
                 <p class="desc">{{lightdetails.description}}</p>
                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="desc-table">
+                  tr><td class="title_col" width="110px">Auto Configuration</td>
+                  <td>
+
+                <span ng-if="checkAutoTrue">
+                  <button ng-click="turnOffAutoConfig()" class="btn btn-danger btn-xs">Turn Off</button>
+              </span>
+
+              <span ng-if="checkAutoFalse">
+                  <button ng-click="turnOnAutoConfig()" class="btn btn-danger btn-xs">Turn On</button>
+              </span>
+
+                  </td></tr>
                   <tr><td class="title_col" width="110px">Name</td><td>{{lightdetails.name}}</td></tr>
                   <tr><td class="title_col">Device Name</td><td>{{lightdetails.devicename.id}}</td></tr>
                   <tr><td class="title_col" width="110px">Longtitude</td><td>{{lightdetails.lightlot}}</td></tr>

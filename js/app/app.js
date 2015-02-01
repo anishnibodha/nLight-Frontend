@@ -38,7 +38,7 @@ nlightweb.config( function( $facebookProvider ) {
 ;
 
 
-nlightweb.controller('mainCtrl',  function($scope,$http, $facebook) {
+nlightweb.controller('mainCtrl',  function($scope,$http, $facebook, devConfig) {
 	$scope.activationkey = "kede292lsi2lsi4nti5"
   $scope.map_light_style = "icon_light light_alert"
 	$scope.lightInfo = false;
@@ -49,7 +49,7 @@ nlightweb.controller('mainCtrl',  function($scope,$http, $facebook) {
 $scope.addingDummyData = function(){
 
 
-    var page = "http://localhost:8080/control/adddummy";
+    var page = devConfig.url + "/control/adddummy";
         $http.get(page).success(function(response) {
           alert("Added dummy data");
         })
@@ -87,7 +87,7 @@ $scope.loginWithFB = function(){
 	}
 
   $scope.manageStyle = function(){
-    var page = "http://localhost:8080/control/alllight";
+    var page = devConfig.url + "/control/alllight";
         $http.get(page).success(function(response) {
          for (var i in response) {
             var currentLight = response[i];
@@ -108,7 +108,7 @@ $scope.loginWithFB = function(){
   $scope.loadPopupAction = function(id){
     
     $scope.currentlightId = id;
-    var page = "http://localhost:8080/monitor/getinfo/"+id+"/dfdf";
+    var page = devConfig.url + "/monitor/getinfo/"+id+"/dfdf";
         $http.get(page).success(function(response) {
           $scope.lightdetails = response;
 
@@ -117,6 +117,18 @@ $scope.loginWithFB = function(){
           $scope.activeLightZone = response.zone;
           $scope.activeLightLatitude = response.lightlat;
           $scope.activeLightLongitude = response.lightlot;
+          $scope.checkAutoTrue = false;
+            $scope.checkAutoFalse = true;
+          if(response.lightStatus == "icon_light light_off"){
+                $scope.checkLightOn = false;
+                $scope.checkLightOff = true;
+
+          }else{
+
+            $scope.checkLightOn = false;
+            $scope.checkLightOff = true;
+
+          }
 
           $scope.status = "on";
         })
@@ -125,7 +137,7 @@ $scope.loginWithFB = function(){
 	$scope.light1Click = function(){
 
 
-		var page = "http://localhost:8080/monitor/getinfo/1/dfdf";
+		var page = devConfig.url + "/monitor/getinfo/1/dfdf";
     	  $http.get(page).success(function(response) {
     		  $scope.lightdetails = response;
     		  $scope.status = "on";
@@ -133,11 +145,57 @@ $scope.loginWithFB = function(){
 
 		$scope.lightInfo = true;
 	}
+
+
+
+
+  $scope.turnoffLight = function(){
+    var page = devConfig.url + "/control/turnofflight/"+$scope.currentlightId;
+     $http.get(page).success(function(response) {
+          $scope.checkLightOn = true;
+          $scope.checkLightOff = false;
+          $scope.changeLightStyle("icon_light light_off",$scope.currentlightId);
+        });
+  }
+
+  $scope.turnOnLight = function(){
+    var page = devConfig.url + "/control/turnofflight/"+$scope.currentlightId;
+     $http.get(page).success(function(response) {
+          $scope.checkLightOn = false;
+          $scope.checkLightOff = true;
+          $scope.changeLightStyle("icon_light light_on",$scope.currentlightId);
+        });
+  }
+
+  $scope.turnOffAutoConfig = function(){
+    var page = devConfig.url + "/control/autoconfigoff/"+$scope.currentlightId;
+     $http.get(page).success(function(response) {
+            $scope.checkAutoTrue = false;
+            $scope.checkAutoFalse = true;
+          
+        });
+
+  }
+
+  $scope.turnOnAutoConfig = function(){
+
+    var page = devConfig.url + "/control/autoconfigon/"+$scope.currentlightId;
+     $http.get(page).success(function(response) {
+
+      $scope.checkAutoTrue = true;
+            $scope.checkAutoFalse = false;
+          
+        });
+
+    
+  }
+
+
 	
 
 	$scope.roundClickLeft = function(){
    $scope.changeLightStyle("icon_light light_dim",$scope.currentlightId);
-		var page = "http://localhost:8080/control/changestat/"+$scope.currentlightId+"/"+"icon_light light_dim";
+		var page = devConfig.url + "/control/changestat/"+$scope.currentlightId+"/"+"icon_light light_dim";
     	  $http.get(page).success(function(response) {
     		  /*$scope.devices = response;
     		  $scope.status = "on";*/
@@ -148,7 +206,7 @@ $scope.loginWithFB = function(){
 
     $scope.changeLightStyle("icon_light light_alert",$scope.currentlightId);
 
-    var page = "http://localhost:8080/control/changestat/"+$scope.currentlightId+"/"+"icon_light light_alert";
+    var page = devConfig.url + "/control/changestat/"+$scope.currentlightId+"/"+"icon_light light_alert";
         $http.get(page).success(function(response) {
           /*$scope.devices = response;
           $scope.status = "on";*/
@@ -166,7 +224,7 @@ $scope.loginWithFB = function(){
 
     $scope.changeLightStyle("icon_light light_on",$scope.currentlightId);
 
-    var page = "http://localhost:8080/control/changestat/"+$scope.currentlightId+"/"+"icon_light light_on";
+    var page = devConfig.url + "/control/changestat/"+$scope.currentlightId+"/"+"icon_light light_on";
         $http.get(page).success(function(response) {
           /*$scope.devices = response;
           $scope.status = "on";*/
@@ -179,7 +237,7 @@ $scope.loginWithFB = function(){
 
    $scope.changeLightStyle("icon_light light_fused",$scope.currentlightId);
 
-		var page = "http://localhost:8080/control/changestat/"+$scope.currentlightId+"/"+"icon_light light_fused";
+		var page = devConfig.url + "/control/changestat/"+$scope.currentlightId+"/"+"icon_light light_fused";
         $http.get(page).success(function(response) {
           /*$scope.devices = response;
           $scope.status = "on";*/
@@ -278,3 +336,6 @@ $scope.loginWithFB = function(){
 
 
 });
+
+nlightweb.constant('devConfig', {"url" : "http://localhost:8080"});
+nlightweb.constant('pro', {"url" : "http://40185033.ngrok.com"});
