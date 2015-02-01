@@ -150,7 +150,7 @@ $scope.loginWithFB = function(){
 
 
   $scope.turnoffLight = function(){
-    var page = devConfig.url + "/control/turnofflight/"+$scope.currentlightId;
+    var page = devConfig.url + "/monitor/turnofflight/"+$scope.currentlightId;
      $http.get(page).success(function(response) {
           $scope.checkLightOn = true;
           $scope.checkLightOff = false;
@@ -159,7 +159,7 @@ $scope.loginWithFB = function(){
   }
 
   $scope.turnOnLight = function(){
-    var page = devConfig.url + "/control/turnonlight/"+$scope.currentlightId;
+    var page = devConfig.url + "/monitor/turnonlight/"+$scope.currentlightId;
      $http.get(page).success(function(response) {
           $scope.checkLightOn = false;
           $scope.checkLightOff = true;
@@ -168,7 +168,7 @@ $scope.loginWithFB = function(){
   }
 
   $scope.turnOffAutoConfig = function(){
-    var page = devConfig.url + "/control/autoconfigoff/"+$scope.currentlightId;
+    var page = devConfig.url + "/monitor/autoconfigoff/"+$scope.currentlightId;
      $http.get(page).success(function(response) {
             $scope.checkAutoTrue = false;
             $scope.checkAutoFalse = true;
@@ -179,7 +179,7 @@ $scope.loginWithFB = function(){
 
   $scope.turnOnAutoConfig = function(){
 
-    var page = devConfig.url + "/control/autoconfigon/"+$scope.currentlightId;
+    var page = devConfig.url + "/monitor/autoconfigon/"+$scope.currentlightId;
      $http.get(page).success(function(response) {
 
       $scope.checkAutoTrue = true;
