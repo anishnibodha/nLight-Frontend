@@ -159,7 +159,7 @@ $scope.loginWithFB = function(){
   }
 
   $scope.turnOnLight = function(){
-    var page = devConfig.url + "/control/turnofflight/"+$scope.currentlightId;
+    var page = devConfig.url + "/control/turnonlight/"+$scope.currentlightId;
      $http.get(page).success(function(response) {
           $scope.checkLightOn = false;
           $scope.checkLightOff = true;
